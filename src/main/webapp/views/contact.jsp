@@ -20,14 +20,17 @@
             <tr>
                 <td>CONTACT NAME</td>
                 <td><form:input path="contactNAME"/></td>
+                <td><form:errors path="contactNAME"/></td>
             </tr>
             <tr>
                 <td>CONTACT EMAIL</td>
                 <td><form:input path="contactEMAIL"/></td>
+                <td><form:errors path="contactEMAIL"/></td>
             </tr>
             <tr>
                  <td>CONTACT NUMBER</td>
                  <td><form:input path="contactNUMBER"/></td>
+                 <td><form:errors path="contactNUMBER"/></td>
             </tr>
             <tr>
                 <td></td>

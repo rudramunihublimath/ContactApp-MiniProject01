@@ -5,3 +5,5 @@ Technology Used :
 3. JSP
 4. SonarQube for code coverage
 5. Oracle DB to store records
+
+End point URL : http://localhost:8081/App1/viewContacts

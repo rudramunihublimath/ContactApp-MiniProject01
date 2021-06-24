@@ -23,6 +23,7 @@ public class ContactServiceImpl implements ContactService {
 
     @Override
     public Boolean saveContact(Contact contact) {
+         contact.setActiveSw("ACTIVE");
          Contact savedEntity = repo.save(contact);
          if(savedEntity!=null && savedEntity.getContactId()!=null) {
              return true;
@@ -70,4 +71,9 @@ public class ContactServiceImpl implements ContactService {
         return false;
     }
 
+    @Override
+    public Boolean isContactExists(Contact contact) {
+        Example<Contact> example = Example.of(contact);
+        return repo.exists(example);
+    }
 }

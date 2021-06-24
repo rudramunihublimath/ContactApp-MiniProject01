@@ -12,5 +12,6 @@ public interface ContactService  {
     public Page<Contact> getAllContactsNEW(Integer pageNo, Integer pageSize);
     public Contact getContactById(Integer contactId);
     public Boolean deleteContactById(Integer contactId);
+    public Boolean isContactExists(Contact contact);
 
 }
